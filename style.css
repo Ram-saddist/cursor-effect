@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background:black;
+}
+.cursor{
+  z-index: -1;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+}
+.cursor:before{
+  position: absolute;
+    width: 28px;
+    height: 28px;
+    content:  "";
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sun_icon.svg/1200px-Sun_icon.svg.png") no-repeat center fixed;
+    background-size: cover;
+  transform: translate(100%, 100%);
+ 
+}
